@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+}
+
+.card {
+  position: relative;
+  background: linear-gradient(135deg, #67e8f9, #3b82f6, #4f46e5, #7c3aed, #1e3a8a);
+  padding: 30px;
+  border-radius: 25px;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Decorative blobs */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.45;
+}
+
+.blob1 { width: 300px; height: 300px; background: #c084fc; top: -70px; right: -70px; }
+.blob2 { width: 240px; height: 240px; background: #22d3ee; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.blob3 { width: 200px; height: 200px; background: #6366f1; bottom: -50px; left: -50px; }
+.blob4 { width: 180px; height: 180px; background: #93c5fd; top: -40px; left: -40px; filter: blur(40px); }
+.blob5 { width: 220px; height: 220px; background: #a78bfa; bottom: 25%; right: -40px; }
+.blob6 { width: 200px; height: 200px; background: #38bdf8; top: 30%; right: 25%; }
+.blob7 { width: 180px; height: 180px; background: #e879f9; bottom: -40px; right: -40px; }
+.blob8 { width: 160px; height: 160px; background: #60a5fa; top: 25%; left: -30px; filter: blur(40px); }
+.blob9 { width: 200px; height: 200px; background: #818cf8; bottom: 30%; left: 35%; }
+
+/* Content */
+.content h1 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.content p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Credit */
+.credit {
+  text-align: right;
+}
+
+.credit p {
+  font-size: 0.65rem;
+  opacity: 0.7;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .card {
+    padding: 22px;
+    border-radius: 20px;
+  }
+
+  .content h1 {
+    font-size: 1.4rem;
+  }
+
+  .content p {
+    font-size: 0.78rem;
+  }
+}
